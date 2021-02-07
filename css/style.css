@@ -26,6 +26,14 @@ a {
   text-decoration: none;
 }
 
+.filters {
+  background-image: url("../img/catalogbackground.png");
+}
+
+.welcome{
+  background-image: url("../img/backgroundphoto.jpg");
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -72,3 +80,5 @@ img {
   font-size: 30px;
   line-height: 42px;
 }
+
+
