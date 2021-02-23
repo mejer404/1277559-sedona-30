@@ -6,6 +6,7 @@
   --basic-extra-light: #f8f5f2;
   --basic-white: #ffffff;
   --basic-grey: #333333;
+  --baasic-dark-grey: #666666;
   --basic-darkgrey: #F2F2F2;
   --basic-brown: #766357;
   --basic-blue: #81B3D2;
@@ -34,6 +35,7 @@ ul {
 .filters {
   background-image: url("../img/catalogbackground.png");
   background-size: 100%;
+  background-position: center;
 
 }
 
@@ -61,7 +63,6 @@ img {
 }
 
 .site-navigation {
-  list-style: none;
 }
 
 .intro p {
@@ -78,6 +79,7 @@ img {
 .intro-heading {
   font-size: 21px;
   line-height: 26px;
+  font-weight: 400;
 }
 .intro-headline{
 
@@ -99,10 +101,6 @@ img {
 /* Features */
 
 .benefits-list {
-  list-style: none;
-}
-.benefits h2{
-  display: none;
 }
 
 .benefits-item {
@@ -111,6 +109,7 @@ img {
 
 .benefits-item p {
   color: var(--basic-grey);
+  font-weight: 400;
 }
 
 .features-item.right {
@@ -144,6 +143,7 @@ img {
 
 .features-item p {
   color: var(--basic-grey);
+  font-weight: 400;
 }
 
 .invatation-heading {
@@ -155,6 +155,7 @@ img {
 .invatation-subtitle {
   font-size: 30px;
   line-height: 24px;
+  font-weight: 400;
   background-color: var(--basic-neutral);
 }
 
@@ -165,10 +166,6 @@ img {
   color: var(--basic-white);
   font-size: 21px;
   line-height: 26px;
-}
-.appointment-info {
-  display: none;
-
 }
 
 .appointment-search {
@@ -185,10 +182,128 @@ img {
   background-size: 100%;
 }
 
-.social-button span {
+.hiden {
   display: none;
 }
 
-.footer-social h2 {
+
+/* Catalog filters*/
+.filters  {
+  color: var(--basic-white);
+  font-weight: 400;
+}
+.filter-name  {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.show {
+  text-align: center;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: transparent;
+  border: 2px solid;
+  outline: none;
+}
+
+.filter-type  {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
   display: none;
+}
+
+*/
+.found  {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.sorting  {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sorting-label  {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.rate-up {
+  outline: none;
+  border: none;
+}
+
+.rate-down {
+  outline: none;
+  border: none;
+}
+
+/* Footer */
+
+footer{
+  background-color: var(--basic-white);
+}
+.contacts {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+
+}
+.contacts-phone {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+.social-button  {
+  background-color: var(--basic-blue);
+}
+
+/*catalog*/
+.catalog  {
+  background-color: var(--basic-white);
+}
+
+.hotel-name {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.type-of-hotel  {
+  font-weight: 400;
+  color: var(--basic-grey);
+}
+
+.price  {
+  font-weight: 400;
+  color: var(--basic-grey);
+}
+
+.hotel-rating {
+  color: var(--baasic-dark-grey);
+  background-color: var(--basic-darkgrey);
+}
+
+.detailed {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+
+}
+.reservation  {
+  color: var(--basic-white);
+  background-color: var(--basic-extra-dark);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  outline: none;
+  border: none;
 }
