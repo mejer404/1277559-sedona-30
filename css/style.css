@@ -348,7 +348,7 @@ footer {
   text-decoration: none;
   color: var(--basic-black);
 }
-.social-section{
+.social-section {
   display: grid;
   grid-template-columns: 48px 48px 48px;
   grid-template-rows: 56px;
