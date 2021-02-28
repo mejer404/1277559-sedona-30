@@ -27,6 +27,7 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  box-sizing: content-box;
   }
 
 a {
@@ -102,7 +103,6 @@ img {
 
 /* User navigation */
 .main-navigation {
-  display: grid;
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-black);
@@ -111,7 +111,6 @@ img {
 
 .main-navigation-wrapper {
   background-color: var(--basic-white);
-  display: grid;
   grid-template-columns: 1fr min-content;
   width: 0 auto;
   margin: 0 auto;
@@ -140,8 +139,8 @@ outline-offset: -5px;
 }
 
 /* Features */
-.benefits {
 
+.benefits {
 }
 
 .benefits-list {
@@ -167,6 +166,7 @@ outline-offset: -5px;
   grid-template-rows: 256px 256px 256px;
   margin: 0px;
   padding: 0px;
+  text-align: center;
 
 }
 
@@ -179,8 +179,6 @@ outline-offset: -5px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 256px;
   margin: 0px;
-  padding: 0px;
-  height: 256px;
 }
 
 .feature-internal {
@@ -198,7 +196,6 @@ outline-offset: -5px;
 
 .features-item {
   background-color: var(--basic-neutral);
-  text-align: center;
 }
 
 .features-heading {
@@ -212,7 +209,7 @@ outline-offset: -5px;
 }
 
 .invatation {
-  align="center";
+  text-align: center;
 }
 
 .invatation-heading {
@@ -231,10 +228,8 @@ outline-offset: -5px;
 }
 
 /* from */
-.appointment {
-  display: grid;
-  grid-template-columns: auto 568px auto;
 
+.appointment {
 }
 
 .appointment-info-button {
@@ -243,17 +238,12 @@ outline-offset: -5px;
   color: var(--basic-white);
   font-size: 21px;
   line-height: 26px;
-  grid-column: 2 / 2;
 }
 .appointment-form {
-  grid-column: 2 / 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   max-width: 568px;
-  height: 395px;
 }
+
 .small-form{
-  grid-column: 2 / -2;
 }
 
 .appointment-search {
@@ -261,7 +251,6 @@ outline-offset: -5px;
   text-align: center;
   font-size: 21px;
   line-height: 26px;
-  grid-column: 2 / -2;
 }
 
 .map {
@@ -276,9 +265,11 @@ outline-offset: -5px;
 
 
 /* Catalog filters*/
+
 .filters {
   color: var(--basic-white);
   font-weight: 400;
+  height: 217px;
 }
 .filter-name {
   font-size: 16px;
@@ -333,7 +324,7 @@ outline-offset: -5px;
 
 /* Footer */
 
-footer {
+.page-footer {
   background-color: var(--basic-white);
 }
 
@@ -348,20 +339,20 @@ footer {
   text-decoration: none;
   color: var(--basic-black);
 }
-.social-section {
+.social-networks {
   display: grid;
   grid-template-columns: 48px 48px 48px;
   grid-template-rows: 56px;
   justify-self: center;
+
 }
 .social-button {
   background-color: var(--basic-blue);
   width: 48px;
+
 }
 
 .html-academy {
-  grid-column: 3 / 3;
-  justify-self: center;
   text-decoration: none;
 
 }
@@ -415,3 +406,7 @@ footer {
   border: none;
 }
 
+.filters{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
